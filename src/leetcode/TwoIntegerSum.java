@@ -10,11 +10,11 @@ public class TwoIntegerSum {
     public static void main(String[] args) {
         int[] nums = {4,5,6};
         int target = 10;
-        TwoIntegerSum twoIntegerSum = new TwoIntegerSum();
-        int[] result = twoIntegerSum.twoSum(nums, target);
+        int[] result = twoSum(nums, target);
         System.out.println("Indices: " + result[0] + ", " + result[1]);
     }
-    public int[] twoSum(int[] nums, int target) {
+
+    public static int[] twoSum(int[] nums, int target) {
     Map<Integer, Integer> numToIndex = new HashMap<>();
     for (int i=0 ;i< nums.length;i++){
     int res = target-nums[i];
